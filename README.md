@@ -55,7 +55,22 @@ In conclusion,<b>AccessRide</b> is an innovative and groundbreaking project that
 
 ## Thanks to Incode for providing us this wonderful Oppurtunity!!
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXfp9EBJuHbs4KCEsQ&usqp=CAU" alt="Lamp" width="300" height="300" display='block' margin-left='auto' margin-right='auto'>
+<table width="100%">
+                        <tr>
+                            <td align="left" valign="top" width="50%">
+                                <img width="560" height="315" 
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXfp9EBJuHbs4KCEsQ&usqp=CAU"  title="Passenger " frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></img>
+                            </td>
+                            <td align="left" valign="top" width="50%">
+                                <img width="560" height="315" src="https://mma.prnewswire.com/media/1876249/Incode_Logo.jpg?p=facebook"
+                                    title="YouTube video player" frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></img>
+                            </td>
+                    </table>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXfp9EBJuHbs4KCEsQ&usqp=CAU" alt="Lamp" width="300" height="300">
 
 
 # Your Comfort, Our Priority "Ride with Ease, Ride with Comfort“ 
