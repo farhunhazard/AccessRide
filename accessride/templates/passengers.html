@@ -1,0 +1,1060 @@
+{%load static %}
+{% load embed_video_tags %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Passenger Panel</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Parallax HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Farhun">
+    <meta name="generator" content="Lone Wolves">
+
+    <meta name="theme-name" content="meghna" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'images/favicon.png'%}" />
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="{%static 'plugins/themefisher-font/style.css'%}">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{%static 'plugins/bootstrap/bootstrap.min.css'%}">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{%static 'plugins/animate-css/animate.css'%}">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="{%static 'plugins/magnific-popup/dist/magnific-popup.css'%}">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{%static 'plugins/slick-carousel/slick.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/slick-carousel/slick-theme.css'%}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/fontawesome-6.4.0/css/all.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/fontawesome-6.4.0/css/regular.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/fontawesome-6.4.0/css/solid.css'%}">
+
+    <style>
+        .filtr-item {
+            width: 33%;
+            height: 350px;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .filtr-item img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .accessride {
+            color: #57cbcc;
+        }
+
+        .login {
+            margin: 40px auto;
+            max-width: 500px;
+        }
+
+        .login h1 {
+            color: #57cbcc !important;
+            font-size: 26px;
+            text-align: center;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-bottom: rgba(255, 255, 255, 0.1) 2px dotted;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .login label {
+            color: #fff;
+        }
+
+        .login .btnbar {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: rgba(255, 255, 255, 0.1) 2px dotted;
+            text-align: center;
+        }
+
+        .login .form-group {
+            padding: 0px 15px;
+        }
+    </style>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar-nav" data-offset="80">
+    <!--
+	Start Preloader
+	==================================== -->
+    <div class="preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <!-- End Preloader
+	==================================== -->
+
+    <!--
+Welcome Slider
+==================================== -->
+    <section class="hero-area overlay" style="background-image: url('{%static 'images/banner/hero-area.jpg'%}');">
+        <!-- <video autoplay muted loop class="hero-video">
+		<source src="images/banner/hero-video.mp4" type="video/mp4">
+	</video> -->
+        <div class="block">
+            <h1>Passenger Panel</h1>
+            <p>The AccessRide app is a specialized transportation platform designed to cater to the needs of people with
+                disabilities. It aims to provide comfortable and accessible rides to individuals who require extra
+                assistance or accommodations during their travels.</p>
+            <a href="#services" class="btn btn-transparent smooth-scroll">Explore Us</a>
+        </div>
+    </section>
+    <!-- 
+Sticky Navigation
+==================================== -->
+    <header id="navigation" class="navigation">
+        <div class="container">
+            <div class="navbar-header w-100">
+                <nav class="navbar navbar-expand-lg navbar-dark px-0">
+                    <!-- logo -->
+                    <a class="navbar-brand logo" href="{%url 'accessride:home'%}">
+                        <!-- <img src="images/logo.png" alt="Website Logo" /> -->
+                        <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC"
+                                    stroke-width="3">
+                                    <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+                                    <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+                                    <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- /logo -->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar01">
+                        <ul class="navbar-nav navigation-menu ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#location">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#our-team">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-us">Contact</a>
+                            </li>
+                            {%if user.is_authenticated%}
+                            <div class="collapse navbar-collapse" id="navbar01">
+                                <ul class="navbar-nav navigation-menu ml-auto">
+                                    <li class="nav-item">Hello {{user.first_name}}</li>
+                                    <li><a href="{% url 'accessride:logout' %}">Logout</a></li>
+                                </ul>
+                            </div>
+                            {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'accessride:register' %}">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--
+End Sticky Navigation
+==================================== -->
+
+    <!--
+		Start About Section
+		==================================== -->
+    <section class="bg-one about section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <!-- section title -->
+                    <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+                        <h2>About <span class="color">Us</span> </h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div>
+
+                <!-- About item -->
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+                    <div class="block">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-wheelchair"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="content text-center">
+                            <h3 class="ddd">Accessibility</h3>
+                            <p> The app focuses on ensuring accessibility for passengers with disabilities
+                                by offering vehicles equipped with wheelchair ramps or lifts, spacious interiors, and
+                                other necessary accessibility features.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End About item -->
+
+                <!-- About item -->
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+                    <div class="block">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="content text-center">
+                            <h3>Specialized Drivers</h3>
+                            <p>The app recruits drivers who are trained to provide assistance and support to passengers
+                                with disabilities. These drivers are knowledgeable about accessibility requirements and
+                                are committed to delivering a comfortable and inclusive experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About item -->
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="block">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="content text-center">
+                            <h3>Customized Preferences</h3>
+                            <p>Passengers can specify their particular needs and preferences within the app, such as
+                                requiring a wheelchair-accessible vehicle, additional time for boarding and alighting,
+                                or any specific assistance required during the ride.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="block">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="content text-center">
+                            <h3>Real-time Tracking</h3>
+                            <p>Passengers can track the location of their assigned vehicle in real-time,
+                                providing peace of mind and ensuring they are prepared for pick-up.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="block">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="content text-center">
+                            <h3>Safety Measures</h3>
+                            <p>The app prioritizes passenger safety by conducting driver background checks,
+                                ensuring proper vehicle maintenance, and implementing safety protocols to
+                                enhance the overall travel experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+                    <div class="block">
+                        <div class="icon-box">
+                            <i class="fa-brands fa-google-pay"></i>
+                        </div>
+                        <!-- Express About Yourself -->
+                        <div class="content text-center">
+                            <h3>Seamless Payment</h3>
+                            <p>The app offers convenient and secure payment options, allowing passengers to complete
+                                their transactions electronically, reducing the need for physical cash handling.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End About item -->
+
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End section -->
+
+
+    <section id="location" class="login">
+        <h1>Location Based Services</h1>
+        <div class="form-group">
+            <label for="exampleInputEmail1">From</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">To</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                name="username">
+        </div>
+        <div>
+            <center>
+                <button type="button" value="location" class="btn btn-success" onclick="show()" id="btnID">
+                    Start a Ride
+                </button>
+            </center>
+            <br>
+            <div style="text-align:center;">
+                <img  id="image" src="{%static 'images/about/maps.jpg'%}">
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--
+Start Call To Action
+==================================== -->
+    <section class="call-to-action section-sm bg-1 overly">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>"With wheels that glide and service with pride, we're the app where comfort will reside!"</h2>
+                    <p>For accessible rides that truly cater, we're here to serve, no need to wait here!
+                        <br> With drivers who care and equipment that's rare, we ensure accessibility beyond compare!
+                    </p>
+                    <a href="#contact-us" class="btn btn-main">Start a conversation with us</a>
+                </div>
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End section -->
+
+    <!-- Start Services Section
+==================================== -->
+    <section id="services" class="bg-one section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                        <h2>Our <span class="color">Services</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div>
+
+                <!-- Single Service Item -->
+                <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3>Ride Booking and Scheduling</h3>
+                        <p>AccessRide offers seamless and user-friendly interface for disabled passengers to book rides
+                            in advance or on-demand..</p>
+                    </div>
+                </article>
+                <!-- End Single Service Item -->
+
+                <!-- Single Service Item -->
+                <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3>Driver Matching and Selection</h3>
+                        <p>The app can include a matching algorithm that considers the unique needs and preferences of
+                            disabled passengers and matches them with drivers who have relevant experience, training,
+                            and accessible vehicles.</p>
+                    </div>
+                </article>
+                <!-- End Single Service Item -->
+
+                <!-- Single Service Item -->
+                <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3>Vehicle Accessibility Information</h3>
+                        <p>AccessRide provides detailed information about the accessible features of vehicles
+                            available for rides. This includes whether the vehicles are wheelchair accessible, have
+                            ramps or lifts, offer space for mobility aids, or have other accommodations to cater to the
+                            specific needs of passengers with disabilities.</p>
+                    </div>
+                </article>
+                <!-- End Single Service Item -->
+
+                <!-- Single Service Item -->
+                <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-file-shield"></i>
+                        </div>
+                        <h3>Safety and Security Measures</h3>
+                        <p>Our App prioritizes the safety and security of passengers with disabilities.</p>
+                    </div>
+                </article>
+                <!-- End Single Service Item -->
+
+                <!-- Single Service Item -->
+                <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+                    <div class="service-block text-center">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h3>User Feedback and Rating System</h3>
+                        <p>To maintain quality service, AccessRide includes a feedback and rating system. This allows
+                            passengers to provide feedback on their experience and rate drivers based on their level of
+                            assistance, vehicle accessibility, and overall service quality..</p>
+                    </div>
+                </article>
+                <!-- End Single Service Item -->
+
+                <!-- Single Service Item -->
+                <article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="service-block text-center kill-margin-bottom">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>Community and Support</h3>
+                        <p>AccessRide can foster a sense of community by providing forums or chat groups where
+                            passengers
+                            with disabilities can connect, share experiences, and support one another.(in future)</p>
+                    </div>
+                </article>
+                <!-- End Single Service Item -->
+
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End section -->
+
+    <!-- Start Team Skills
+		=========================================== -->
+
+    <section id="team-skills" class="parallax-section section section-bg overly">
+        <div class="container">
+            <div class="row">
+                <!-- section title -->
+                <div class="col-md-12">
+                    <div class="title text-center">
+                        <h2>Our <span class="color">Skills</span></h2>
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <!-- /section title -->
+            </div> <!-- End row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>We’re skilled in various programming languages and technologies</h2>
+                    <p>We won the devpost-hosted Miami hackweek competition, and we placed second and third in the
+                        hackerearth-hosted Daisi hackathon.The software is still in the development stage, so a later
+                        release with more functionality is certain.If other members of Incode keep our efforts in mind,
+                        we would continue to work hard and make Incode a huge success.We are prepared to add new
+                        features to inCode.</p>
+                    <img class="img-fluid" src="{%static 'images/about/company-growth.png'%}" alt="">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <ul class="skill-bar">
+                        <li>
+                            <p><span>01-</span>Django</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:90%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>02-</span>Data Analysis and preparation</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:70%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>03-</span>Machine Learning</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:85%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>04-</span>Marketing</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:60%">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p><span>04-</span>Postgre SQL</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100" style="width:94%">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- End container -->
+    </section> <!-- End section -->
+
+    <!-- Start Portfolio Section
+=========================================== -->
+
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="title text-center">
+                        <h2>Our <span class="color">Works</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div> <!-- /end col-lg-12 -->
+            </div> <!-- end row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-filter">
+                        <button class="active" type="button" data-filter="all">All</button>
+                        <button type="button" data-filter="photography">Mobility Aids</button>
+                        <button type="button" data-filter="design">Accessibility Equipment</button>
+                        <button type="button" data-filter="development">Assistive Devices</button>
+                        <button type="button" data-filter="Personal">Personal Assistance</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-auto filtr-container">
+                <div class="filtr-item" data-category="photography">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-1.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-1.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Wheelchair</a></h4>
+                            <p class="mb-0"> Manual or electric wheelchairs to assist individuals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="design">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-2.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-2.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Step Ramps</a></h4>
+                            <p>Structures that enable wheelchair users to access buildings, vehicles, steps or raised
+                                platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="{%static 'images/portfolio/portfolio-3.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-3.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Hearing Aids</a></h4>
+                            <p class="mb-0">Devices that amplify sound for individuals with hearing impairments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="photography">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-4.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-4.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Mobility Scooters</a></h4>
+                            <p class="mb-0">Battery-powered scooters for individuals with limited mobility.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="design">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-5.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-5.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Handrails and Grab Bars</a></h4>
+                            <p class="mb-0">Supportive bars installed in bathrooms, stairways, and other areas to assist
+                                with stability and balance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="photography">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-6.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-6.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Walkers and Canes</a></h4>
+                            <p>Supportive devices for individuals who require assistance with balance or
+                                stability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="design">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-7.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-7.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Stairlifts and Elevators</a></h4>
+                            <p class="mb-0">Devices that assist individuals with mobility impairments in navigating
+                                stairs or reaching different levels of a building.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="Personal">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-8.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-8.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Personal Care Attendants</a></h4>
+                            <p class="mb-0">Trained professionals who provide assistance of guiding passengers leniently
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="{%static 'images/portfolio/portfolio-9.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-9.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Braille Materials</a></h4>
+                            <p class="mb-0">Braille books, notetakers, and other materials for individuals who are blind
+                                or have visual impairments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="development">
+                    <div class="portfolio-block">
+                        <img class="img-fluid" src="{%static 'images/portfolio/portfolio-10.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-10.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Cochlear Implants</a></h4>
+                            <p class="mb-0"> Surgically implanted devices that provide sound signals directly to the
+                                auditory nerve for individuals with severe hearing loss.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="Personal">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-11.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-11.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Sign Language Interpreters</a></h4>
+                            <p class="mb-0">Professionals who facilitate communication between individuals with hearing
+                                impairments and those who use sign language.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtr-item" data-category="Personal">
+                    <div class="portfolio-block">
+                        <img class=" img-fluid" src="{%static 'images/portfolio/portfolio-12.jpg'%}" alt="">
+                        <div class="caption">
+                            <a class="search-icon image-popup" data-effect="mfp-with-zoom"
+                                href="{%static 'images/portfolio/portfolio-12.jpg'%}" data-lightbox="image-1">
+                                <i class="tf-ion-android-search"></i>
+                            </a>
+                            <h4><a href="">Gait Belts</a></h4>
+                            <p class="mb-0">A carer will place a gait belt or transfer belt on a patient who has
+                                mobility challenges before the patient is moved.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </section> <!-- End section -->
+
+    <!-- 
+Start Our Team
+=========================================== -->
+
+    <section id="our-team" class="section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                        <h2>Our <span class="color">Team</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div>
+
+                <!-- team member -->
+                <div class="col-lg-6 col-md-6 wow fadeIn" data-wow-duration="500ms">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <!-- member photo -->
+                            <img class="img-fluid" src="{%static 'images/team/team-2.jpeg'%}" alt="Meghna">
+                            <!-- /member photo -->
+
+                            <!-- member social profile -->
+                            <div class="mask">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="https://devpost.com/mohamedfarhun-it20">
+                                            <i class="fa-sharp fa-solid fa-d"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/Farhun_19"><i
+                                                class="tf-ion-social-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a
+                                            href="https://www.linkedin.com/in/mohamed-farhun-m-098b68227/"><i
+                                                class="tf-ion-social-linkedin"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a
+                                            href="https://www.instagram.com/__farhun___19/?igshid=ZDc4ODBmNjlmNQ%3D%3D">
+                                            <i class="fa-brands fa-square-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- /member social profile -->
+                        </div>
+
+                        <!-- member name & designation -->
+                        <div class="member-meta">
+                            <h4 class="h5">Mohamed Farhun M</h4>
+                            <span>CEO/Founder/Developer/Frontend</span>
+                            <p>Welcome to our website! Do explore our company and its leadership qualities.<br>
+                                "Access and comfort intertwined, our app is the perfect ride you'll find!"</p>
+                        </div>
+                        <!-- /member name & designation -->
+                        <!-- /about member -->
+
+                    </div>
+                </div>
+                <!-- end team member -->
+
+                <!-- team member -->
+                <div class="col-lg-6 col-md-6 wow fadeIn" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <!-- member photo -->
+                            <img class="img-fluid" src="{%static 'images/team/team-1.jpg'%}" alt="Meghna">
+                            <!-- /member photo -->
+
+                            <!-- member social profile -->
+                            <div class="mask">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="https://devpost.com/manish-mc20"><i
+                                                class="fa-sharp fa-solid fa-d"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#"><i class="tf-ion-social-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#"><i class="tf-ion-social-linkedin"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#"><i
+                                                class="fa-brands fa-square-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- /member social profile -->
+                        </div>
+
+                        <!-- member name & designation -->
+                        <div class="member-meta">
+                            <h4 class="h5">Manish R</h4>
+                            <span>Manager/Developer/Backend</span>
+                            <p>"For passengers with disabilities, we offer rides with ease and tranquility!".<br>"A ride
+                                that's sublime, making every moment shine, with comfort and safety in every line!"</p>
+                        </div>
+                        <!-- /member name & designation -->
+                        <!-- /about member -->
+                    </div>
+                </div>
+                <!-- end team member -->
+            </div> <!-- End container -->
+    </section> <!-- End section -->
+
+    <!-- Start Testimonial
+=========================================== -->
+
+    <section id="testimonial" class="testimonial overly section bg-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- testimonial wrapper -->
+                    <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+
+                        <!-- testimonial single -->
+                        <div class="item text-center">
+
+                            <!-- client photo -->
+                            <div class="client-thumb">
+                                <img src="{%static 'images/team/client-1.jpg'%}" class="img-fluid" alt="Meghna">
+                            </div>
+                            <!-- /client photo -->
+
+                            <!-- client info -->
+                            <div class="client-info">
+                                <div class="client-meta">
+                                    <h3>Mohamed Farhun M</h3>
+                                    <span>Oct 19, 2002</span>
+                                </div>
+                                <div class="client-comment">
+                                    <p>Welcome to AccessRide, where comfort meets accessibility in the world of
+                                        ride-hailing. Our mission is to provide a seamless and inclusive transportation
+                                        experience for people with disabilities.At AccessRide, we believe that everyone
+                                        deserves the freedom to travel with comfort, dignity, and independence. Our app
+                                        connects disabled passengers with experienced drivers who are trained to provide
+                                        specialized support and accommodations.</p><br>
+                                    <h3 class="accessride">"Access and comfort intertwined, our app is the perfect ride
+                                        you'll find!"</h3>
+                                </div>
+                            </div>
+                            <!-- /client info -->
+                        </div>
+                        <!-- /testimonial single -->
+
+                        <!-- testimonial single -->
+                        <div class="item text-center">
+
+                            <!-- client photo -->
+                            <div class="client-thumb">
+                                <img src="{%static 'images/team/client-2.jpg'%}" class="img-fluid" alt="Meghna">
+                            </div>
+                            <!-- /client photo -->
+
+                            <!-- client info -->
+                            <div class="client-info">
+                                <div class="client-meta">
+                                    <h3>Manish R</h3>
+                                    <span>May 28, 2002</span>
+                                </div>
+                                <div class="client-comment">
+                                    <p>Our app is designed with the specific needs of disabled passengers in mind. We
+                                        provide detailed information about driver profiles, including their experience,
+                                        specialized training, and accessible vehicles. This allows passengers to make
+                                        informed decisions and select drivers who can best meet their requirements.We
+                                        prioritize safety and security above all else. Our drivers undergo thorough
+                                        background checks and our vehicles are regularly inspected to ensure compliance
+                                        with safety standards. </p><br>
+                                    <h3 class="accessride">"With drivers who care and equipment that's rare, we ensure
+                                        comfort beyond compare!"</h3>
+                                </div>
+                            </div>
+                            <!-- /client info -->
+                        </div>
+
+                    </div> <!-- end testimonial wrapper -->
+                </div> <!-- end col lg 12 -->
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End Section -->
+
+
+    <!-- Srart Contact Us
+=========================================== -->
+    <section id="contact-us" class="contact-us section-bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <!-- section title -->
+                    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                        <h2>Get In <span class="color">Touch</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div>
+
+                <!-- Contact Details -->
+                <div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+                    <h3>Contact Details</h3>
+                    <p>We appreciate your interest in contacting us. For inquiries, support, or any other assistance
+                        related to our app, you can reach out to us using the following contact details:</p>
+                    <div class="contact-details">
+                        <div class="con-info clearfix">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <span>Madurai-625107</span>
+                        </div>
+
+                        <div class="con-info clearfix">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Phone: +91 9360593132</span>
+                        </div>
+
+                        <div class="con-info clearfix">
+                            <i class="fa-solid fa-square-envelope"></i>
+                            <span>Email:mohamedfarhun.it20@bitsathy.ac.in</span>
+                        </div>
+                        <p>Our dedicated customer support team is available to assist you during our business hours,
+                            which are Monday to Friday, 9:00 AM to 9:00 PM (local time). We strive to respond to all
+                            inquiries promptly and provide the support you need.</p>
+                    </div>
+                </div>
+                <!-- / End Contact Details -->
+
+                <!-- Contact Form -->
+                <div class="contact-form col-lg-6 mt-4 mt-lg-0 wow fadeInUp" data-wow-duration="500ms"
+                    data-wow-delay="300ms">
+                    <form id="contact-form" method="post" href="register.html" role="form">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="6" placeholder="Message" class="form-control" name="message"
+                                id="message"></textarea>
+                        </div>
+                        <div id="cf-submit">
+                            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                        </div>
+
+                    </form>
+                </div>
+                <!-- ./End Contact Form -->
+
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+
+    </section> <!-- end section -->
+
+    <!-- end Contact Area
+========================================== -->
+    <footer id="footer" class="bg-one">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="500ms">
+                <div class="col-lg-12">
+                    <h3 class="mt-3">Thank you for choosing AccessRide. We look forward to serving you and providing you
+                        with a
+                        comfortable and inclusive ride-hailing experience.</h3>
+                    <!-- Footer Social Links -->
+                    <div class="social-icon">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a
+                                    href="https://www.linkedin.com/in/mohamed-farhun-m-098b68227/"><i
+                                        class="tf-ion-social-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a
+                                    href="https://www.instagram.com/__farhun___19/?igshid=ZDc4ODBmNjlmNQ%3D%3D">
+                                    <i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/@mohamedfarhunm2275/featured">
+                                    <i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="https://devpost.com/mohamedfarhun-it20"><i
+                                        class="fa-sharp fa-solid fa-d"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--/. End Footer Social Links -->
+                    <!-- copyright -->
+                    <div class="copyright text-center">
+                        <a href="{%url 'accessride:home'%}">
+                            <!-- <img src="images/logo-meghna.png" alt="Meghna" />  -->
+                            <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC"
+                                        stroke-width="3">
+                                        <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+                                        <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+                                        <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+
+                        <p class="mt-3">Copyright
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>. All Rights Reserved. <br> Designed &amp; Developed by <a
+                                href="https://www.hackerearth.com/challenges/hackathon/incode-2023-challenging-injustice/dashboard/cbc47a7/idea/">LoneWolves</a>.
+                        </p>
+                    </div>
+                    <!-- /copyright -->
+
+                </div> <!-- end col lg 12 -->
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </footer> <!-- end footer -->
+
+    <!-- 
+	Essential Scripts
+	=====================================-->
+
+    <!-- Main jQuery -->
+    <script src="{%static 'plugins/jquery/jquery.min.js'%}"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="{%static 'plugins/bootstrap/bootstrap.min.js'%}"></script>
+    <!-- Slick Carousel -->
+    <script src="{%static 'plugins/slick-carousel/slick.min.js'%}"></script>
+    <!-- Portfolio Filtering -->
+    <script src="{%static 'plugins/filterzr/jquery.filterizr.min.js'%}"></script>
+    <!-- Magnific popup -->
+    <script src="{%static 'plugins/magnific-popup/dist/jquery.magnific-popup.min.js'%}"></script>
+    <!-- wow.min Script -->
+    <script src="{%static 'plugins/wow/wow.min.js'%}"></script>
+    <!-- Custom js -->
+    <script src="{%static 'js/script.js'%}"></script>
+
+</body>
+
+</html>

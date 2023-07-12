@@ -1,0 +1,507 @@
+{%load static %}
+{% load embed_video_tags %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Registration</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Parallax HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Farhun">
+    <meta name="generator" content="LoneWolves">
+
+    <meta name="theme-name" content="meghna" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'images/favicon.png'%}" />
+
+    <!-- CSS
+		================================================== -->
+    <!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="{%static 'plugins/themefisher-font/style.css'%}">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{%static 'plugins/bootstrap/bootstrap.min.css'%}">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{%static 'plugins/animate-css/animate.css'%}">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="{%static 'plugins/magnific-popup/dist/magnific-popup.css'%}">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{%static 'plugins/slick-carousel/slick.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/slick-carousel/slick-theme.css'%}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/fontawesome-6.4.0/css/all.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/fontawesome-6.4.0/css/regular.css'%}">
+    <link rel="stylesheet" href="{%static 'plugins/fontawesome-6.4.0/css/solid.css'%}">
+
+    <style>
+        .filtr-item {
+            width: 33%;
+            height: 350px;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .filtr-item img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .accessride {
+            color: #57cbcc;
+        }
+        .login{ margin: 40px auto; max-width: 500px;}
+        .login h1{ color: #57cbcc !important; font-size: 26px; text-align: center; font-weight: 800; text-transform: uppercase; border-bottom: rgba(255,255,255,0.1) 2px dotted; padding-bottom: 10px; margin-bottom: 30px; }
+        .login label{ color: #fff;}
+        .login .btnbar{ margin-top: 30px; padding-top: 30px; border-top: rgba(255,255,255,0.1) 2px dotted; text-align: center;}
+        .login .form-group{ padding: 0px 15px;}
+    </style>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar-nav" data-offset="80">
+    <!--
+	Start Preloader
+	==================================== -->
+    <div class="preloader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <!-- End Preloader
+	==================================== -->
+
+    <!--
+Welcome Slider
+==================================== -->
+    <section class="hero-area overlay" style="background-image: url('{%static 'images/banner/hero-area.jpg'%}');">
+        <!-- <video autoplay muted loop class="hero-video">
+		<source src="images/banner/hero-video.mp4" type="video/mp4">
+	</video> -->
+        <div class="block">
+            <h1>Login</h1>
+            <p>The AccessRide app is a specialized transportation platform designed to cater to the needs of people with
+                disabilities. It aims to provide comfortable and accessible rides to individuals who require extra
+                assistance or accommodations during their travels.</p>
+        </div>
+    </section>
+    <!-- 
+Sticky Navigation
+==================================== -->
+    <header id="navigation" class="navigation">
+        <div class="container">
+            <div class="navbar-header w-100">
+                <nav class="navbar navbar-expand-lg navbar-dark px-0">
+                    <!-- logo -->
+                    <a class="navbar-brand logo" href="{%url 'accessride:home'%}">
+                        <!-- <img src="images/logo.png" alt="Website Logo" /> -->
+                        <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC"
+                                    stroke-width="3">
+                                    <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+                                    <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+                                    <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- /logo -->
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar01">
+                        <ul class="navbar-nav navigation-menu ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--
+Start Counter Section
+==================================== -->
+
+    <section id="login" class="login">
+        <h1>Login</h1>
+         <form action="login" class="form-horizontal" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="exampleInputEmail1">User Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1"  name="password">
+            </div>
+            <div class="btnbar">
+                <button type="submit" value="driver" name="submit_button" class="btn btn-success">Login as driver</button>
+                <button type="submit" value="passenger" name="submit_button" class="btn btn-primary">Login as Passenger</button>
+            </div>
+        </form>
+        <div>
+            {% for message in messages%}
+            <h3 style="color: red; margin-top:10px; font-size:20px;">{{message}}</h3>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- 
+Start Our Team
+=========================================== -->
+
+    <section id="our-team" class="section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                        <h2>Our <span class="color">Team</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div>
+
+                <!-- team member -->
+                <div class="col-lg-6 col-md-6 wow fadeIn" data-wow-duration="500ms">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <!-- member photo -->
+                            <img class="img-fluid" src="{%static 'images/team/team-2.jpeg'%}" alt="Meghna">
+                            <!-- /member photo -->
+
+                            <!-- member social profile -->
+                            <div class="mask">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="https://devpost.com/mohamedfarhun-it20">
+                                            <i class="fa-sharp fa-solid fa-d"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/Farhun_19"><i
+                                                class="tf-ion-social-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a
+                                            href="https://www.linkedin.com/in/mohamed-farhun-m-098b68227/"><i
+                                                class="tf-ion-social-linkedin"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a
+                                            href="https://www.instagram.com/__farhun___19/?igshid=ZDc4ODBmNjlmNQ%3D%3D">
+                                            <i class="fa-brands fa-square-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- /member social profile -->
+                        </div>
+
+                        <!-- member name & designation -->
+                        <div class="member-meta">
+                            <h4 class="h5">Mohamed Farhun M</h4>
+                            <span>CEO/Founder/Developer/Frontend</span>
+                            <p>Welcome to our website! Do explore our company and its leadership qualities.<br>
+                                "Access and comfort intertwined, our app is the perfect ride you'll find!"</p>
+                        </div>
+                        <!-- /member name & designation -->
+                        <!-- /about member -->
+
+                    </div>
+                </div>
+                <!-- end team member -->
+
+                <!-- team member -->
+                <div class="col-lg-6 col-md-6 wow fadeIn" data-wow-duration="500ms" data-wow-delay="200ms">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <!-- member photo -->
+                            <img class="img-fluid" src="{%static 'images/team/team-1.jpg'%}" alt="Meghna">
+                            <!-- /member photo -->
+
+                            <!-- member social profile -->
+                            <div class="mask">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><a href="https://devpost.com/manish-mc20"><i
+                                                class="fa-sharp fa-solid fa-d"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#"><i class="tf-ion-social-twitter"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#"><i class="tf-ion-social-linkedin"></i></a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="#"><i
+                                                class="fa-brands fa-square-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- /member social profile -->
+                        </div>
+
+                        <!-- member name & designation -->
+                        <div class="member-meta">
+                            <h4 class="h5">Manish R</h4>
+                            <span>Manager/Developer/Backend</span>
+                            <p>"For passengers with disabilities, we offer rides with ease and tranquility!".<br>"A ride
+                                that's sublime, making every moment shine, with comfort and safety in every line!"</p>
+                        </div>
+                        <!-- /member name & designation -->
+                        <!-- /about member -->
+                    </div>
+                </div>
+                <!-- end team member -->
+            </div> <!-- End container -->
+    </section> <!-- End section -->
+
+    <!-- Start Testimonial
+=========================================== -->
+
+    <section id="testimonial" class="testimonial overly section bg-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- testimonial wrapper -->
+                    <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+
+                        <!-- testimonial single -->
+                        <div class="item text-center">
+
+                            <!-- client photo -->
+                            <div class="client-thumb">
+                                <img src="{%static 'images/team/client-1.jpg'%}" class="img-fluid" alt="Meghna">
+                            </div>
+                            <!-- /client photo -->
+
+                            <!-- client info -->
+                            <div class="client-info">
+                                <div class="client-meta">
+                                    <h3>Mohamed Farhun M</h3>
+                                    <span>Oct 19, 2002</span>
+                                </div>
+                                <div class="client-comment">
+                                    <p>Welcome to AccessRide, where comfort meets accessibility in the world of
+                                        ride-hailing. Our mission is to provide a seamless and inclusive transportation
+                                        experience for people with disabilities.At AccessRide, we believe that everyone
+                                        deserves the freedom to travel with comfort, dignity, and independence. Our app
+                                        connects disabled passengers with experienced drivers who are trained to provide
+                                        specialized support and accommodations.</p><br>
+                                    <h3 class="accessride">"Access and comfort intertwined, our app is the perfect ride
+                                        you'll find!"</h3>
+                                </div>
+                            </div>
+                            <!-- /client info -->
+                        </div>
+                        <!-- /testimonial single -->
+
+                        <!-- testimonial single -->
+                        <div class="item text-center">
+
+                            <!-- client photo -->
+                            <div class="client-thumb">
+                                <img src="{%static 'images/team/client-2.jpg'%}" class="img-fluid" alt="Meghna">
+                            </div>
+                            <!-- /client photo -->
+
+                            <!-- client info -->
+                            <div class="client-info">
+                                <div class="client-meta">
+                                    <h3>Manish R</h3>
+                                    <span>May 28, 2002</span>
+                                </div>
+                                <div class="client-comment">
+                                    <p>Our app is designed with the specific needs of disabled passengers in mind. We
+                                        provide detailed information about driver profiles, including their experience,
+                                        specialized training, and accessible vehicles. This allows passengers to make
+                                        informed decisions and select drivers who can best meet their requirements.We
+                                        prioritize safety and security above all else. Our drivers undergo thorough
+                                        background checks and our vehicles are regularly inspected to ensure compliance
+                                        with safety standards. </p><br>
+                                    <h3 class="accessride">"With drivers who care and equipment that's rare, we ensure
+                                        comfort beyond compare!"</h3>
+                                </div>
+                            </div>
+                            <!-- /client info -->
+                        </div>
+
+                    </div> <!-- end testimonial wrapper -->
+                </div> <!-- end col lg 12 -->
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </section> <!-- End Section -->
+
+
+    <!-- Srart Contact Us
+=========================================== -->
+    <section id="contact-us" class="contact-us section-bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <!-- section title -->
+                    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                        <h2>Get In <span class="color">Touch</span></h2>
+                        <div class="border"></div>
+                    </div>
+                    <!-- /section title -->
+                </div>
+
+                <!-- Contact Details -->
+                <div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+                    <h3>Contact Details</h3>
+                    <p>We appreciate your interest in contacting us. For inquiries, support, or any other assistance
+                        related to our app, you can reach out to us using the following contact details:</p>
+                    <div class="contact-details">
+                        <div class="con-info clearfix">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <span>Madurai-625107</span>
+                        </div>
+
+                        <div class="con-info clearfix">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Phone: +91 9360593132</span>
+                        </div>
+
+                        <div class="con-info clearfix">
+                            <i class="fa-solid fa-square-envelope"></i>
+                            <span>Email:mohamedfarhun.it20@bitsathy.ac.in</span>
+                        </div>
+                        <p>Our dedicated customer support team is available to assist you during our business hours,
+                            which are Monday to Friday, 9:00 AM to 9:00 PM (local time). We strive to respond to all
+                            inquiries promptly and provide the support you need.</p>
+                    </div>
+                </div>
+                <!-- / End Contact Details -->
+
+                <!-- Contact Form -->
+                <div class="contact-form col-lg-6 mt-4 mt-lg-0 wow fadeInUp" data-wow-duration="500ms"
+                    data-wow-delay="300ms">
+                    <form id="contact-form" method="post" action="sendmail.php" role="form">
+                        {% csrf_token %}
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea rows="6" placeholder="Message" class="form-control" name="message"
+                                id="message"></textarea>
+                        </div>
+
+                        <div id="cf-submit">
+                            <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                        </div>
+
+                    </form>
+                </div>
+                <!-- ./End Contact Form -->
+
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+
+    </section> <!-- end section -->
+
+    <!-- end Contact Area
+========================================== -->
+    <footer id="footer" class="bg-one">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="500ms">
+                <div class="col-lg-12">
+                    <h3 class="mt-3">Thank you for choosing AccessRide. We look forward to serving you and providing you
+                        with a
+                        comfortable and inclusive ride-hailing experience.</h3>
+                    <!-- Footer Social Links -->
+                    <div class="social-icon">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a
+                                    href="https://www.linkedin.com/in/mohamed-farhun-m-098b68227/"><i
+                                        class="tf-ion-social-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a
+                                    href="https://www.instagram.com/__farhun___19/?igshid=ZDc4ODBmNjlmNQ%3D%3D">
+                                    <i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/@mohamedfarhunm2275/featured">
+                                    <i class="fa-brands fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="https://devpost.com/mohamedfarhun-it20"><i
+                                        class="fa-sharp fa-solid fa-d"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--/. End Footer Social Links -->
+                    <!-- copyright -->
+                    <div class="copyright text-center">
+                        <a href="{%url 'accessride:home'%}">
+                            <!-- <img src="images/logo-meghna.png" alt="Meghna" />  -->
+                            <svg width="40px" height="40px" viewBox="0 0 45 44" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Group" transform="translate(2.000000, 2.000000)" stroke="#57CBCC"
+                                        stroke-width="3">
+                                        <ellipse id="Oval" cx="20.5" cy="20" rx="20.5" ry="20"></ellipse>
+                                        <path d="M6,7 L33.5,34.5" id="Line-2" stroke-linecap="square"></path>
+                                        <path d="M21,20 L34,7" id="Line-3" stroke-linecap="square"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+
+                        <p class="mt-3">Copyright
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>. All Rights Reserved. <br> Designed &amp; Developed by <a
+                                href="https://www.hackerearth.com/challenges/hackathon/incode-2023-challenging-injustice/dashboard/cbc47a7/idea/">LoneWolves</a>.
+                        </p>
+                    </div>
+                    <!-- /copyright -->
+
+                </div> <!-- end col lg 12 -->
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </footer> <!-- end footer -->
+
+    <!-- 
+Essential Scripts
+=====================================-->
+
+    <!-- Main jQuery -->
+    <script src="{%static 'plugins/jquery/jquery.min.js'%}"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="{%static 'plugins/bootstrap/bootstrap.min.js'%}"></script>
+    <!-- Slick Carousel -->
+    <script src="{%static 'plugins/slick-carousel/slick.min.js'%}"></script>
+    <!-- Portfolio Filtering -->
+    <script src="{%static 'plugins/filterzr/jquery.filterizr.min.js'%}"></script>
+    <!-- Magnific popup -->
+    <script src="{%static 'plugins/magnific-popup/dist/jquery.magnific-popup.min.js'%}"></script>
+    <!-- wow.min Script -->
+    <script src="{%static 'plugins/wow/wow.min.js'%}"></script>
+    <!-- Custom js -->
+    <script src="{%static 'js/script.js'%}"></script>
+
+</body>
+
+</html>
