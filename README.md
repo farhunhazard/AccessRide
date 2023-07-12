@@ -55,7 +55,7 @@ In conclusion,<b>AccessRide</b> is an innovative and groundbreaking project that
 
 ## Thanks to Incode for providing us this wonderful Oppurtunity!!
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXfp9EBJuHbs4KCEsQ&usqp=CAU" alt="Lamp" width="32" height="32">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXfp9EBJuHbs4KCEsQ&usqp=CAU" alt="Lamp" width="100" height="100">
 
 # Your Comfort, Our Priority "Ride with Ease, Ride with Comfort“ 
 # "With wheels that glide and service with pride, we're the app where comfort will reside!"
