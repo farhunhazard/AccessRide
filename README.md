@@ -53,7 +53,7 @@ Location-based services plays a crucial role in matching passengers with nearby 
 
 In conclusion,<b>AccessRide</b> is an innovative and groundbreaking project that aims to transform the transportation experience for people with disabilities. By focusing on accessibility, specialized driver training, and a machine learning algorithm, the app sets itself apart from traditional ride-hailing services.
 
-## Thanks to Incode for providing us this wonderful Oppurtunity!!
+## Thanks to LaunchHacks for providing us this wonderful Oppurtunity!!
 
 <table width="100%">
                         <tr>
@@ -63,7 +63,7 @@ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXf
                                     allowfullscreen></img>
                             </td>
                             <td align="left" valign="top" width="50%">
-                                <img width="560" height="315" src="https://mma.prnewswire.com/media/1876249/Incode_Logo.jpg?p=facebook"
+                                <img width="560" height="315" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fd112y698adiu2z.cloudfront.net%2Fphotos%2Fproduction%2Fchallenge_photos%2F000%2F753%2F241%2Fdatas%2Foriginal.png&tbnid=yIneajRqVtN1WM&vet=12ahUKEwjLusXstKyAAxWEtGMGHS_bCHkQMygBegQIARA9..i&imgrefurl=https%3A%2F%2Flaunchhacks2019.devpost.com%2F&docid=y-NCgsuBYj8h3M&w=1636&h=884&itg=1&q=launchhacks%20images&ved=2ahUKEwjLusXstKyAAxWEtGMGHS_bCHkQMygBegQIARA9"
                                     title="YouTube video player" frameborder="0"
                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></img>
