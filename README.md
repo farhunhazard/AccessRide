@@ -63,7 +63,7 @@ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yBGOdHfQFNvgIJg9lXf
                                     allowfullscreen></img>
                             </td>
                             <td align="left" valign="top" width="50%">
-                                <img width="560" height="315" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fd112y698adiu2z.cloudfront.net%2Fphotos%2Fproduction%2Fchallenge_photos%2F000%2F753%2F241%2Fdatas%2Foriginal.png&tbnid=yIneajRqVtN1WM&vet=12ahUKEwjLusXstKyAAxWEtGMGHS_bCHkQMygBegQIARA9..i&imgrefurl=https%3A%2F%2Flaunchhacks2019.devpost.com%2F&docid=y-NCgsuBYj8h3M&w=1636&h=884&itg=1&q=launchhacks%20images&ved=2ahUKEwjLusXstKyAAxWEtGMGHS_bCHkQMygBegQIARA9"
+                                <img width="560" height="315" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fd112y698adiu2z.cloudfront.net%2Fphotos%2Fproduction%2Fchallenge_photos%2F002%2F428%2F328%2Fdatas%2Ffull_width.png&tbnid=PX86J9s_KDH1VM&vet=12ahUKEwjLusXstKyAAxWEtGMGHS_bCHkQMygAegQIARA7..i&imgrefurl=https%3A%2F%2Flaunchhacks-ii.devpost.com%2F&docid=4sAfNFtBrqoJHM&w=1108&h=246&q=launchhacks%20images&ved=2ahUKEwjLusXstKyAAxWEtGMGHS_bCHkQMygAegQIARA7"
                                     title="YouTube video player" frameborder="0"
                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></img>
