@@ -53,8 +53,6 @@ Location-based services plays a crucial role in matching passengers with nearby 
 
 In conclusion,<b>AccessRide</b> is an innovative and groundbreaking project that aims to transform the transportation experience for people with disabilities. By focusing on accessibility, specialized driver training, and a machine learning algorithm, the app sets itself apart from traditional ride-hailing services.
 
-## Thanks to LaunchHacks for providing us this wonderful Oppurtunity!!
-
 <table width="100%">
                         <tr>
                             <td align="left" valign="top" width="50%">
